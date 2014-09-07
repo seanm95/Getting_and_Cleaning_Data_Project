@@ -1,7 +1,6 @@
 
 # README.md for Project  
   
-**Sean Molloy, 8/16/2014  **
   
 I created one R script called run_analysis.R that does the following.   
   
