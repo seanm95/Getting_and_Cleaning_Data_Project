@@ -1,4 +1,9 @@
 
+<<<<<<< HEAD
+=======
+## Sean Molloy, 8/16/2014
+
+>>>>>>> 921f78f292f6e73d56386989bd95514d1b2781fd
 ## See Readme.md for an analysis of the issue and description of the list of steps taken below.
 
 ## 1. Merges the training and the test sets to create one data set.
@@ -38,12 +43,20 @@ x_test_set[,"y_labelNumber"] <- y_test_labels$V1
 ## The one field in test_subjects will be added to x_test_set as subjectNumber
 x_test_set[,"subjectNumber"] <- test_subjects$V1
 
+<<<<<<< HEAD
 ## Now merge the training and the test sets to create one data set named data_set_raw
+=======
+## We now merge the training and the test sets to create one data set named data_set_raw
+>>>>>>> 921f78f292f6e73d56386989bd95514d1b2781fd
 data_set_raw = rbind(x_test_set, x_train_set)
 
 ## 3. Uses descriptive activity names to name the activities in the data set
 
+<<<<<<< HEAD
 ## Add the Activity Label by merging data_set_raw and activityLabels
+=======
+## We add the Activity Label by merging data_set_raw and activityLabels
+>>>>>>> 921f78f292f6e73d56386989bd95514d1b2781fd
 
 ## Change activity field from V2 to activity
 activityLabels[,"activity"] <- activityLabels[,"V2"]
@@ -104,7 +117,11 @@ data_set <- as.data.frame( list( subject = data_set_raw$subjectNumber, activity 
 
 suppressWarnings(data_set_summary <- aggregate(data_set, by=(list(data_set$subject, data_set$activity)), FUN="mean") )
 
+<<<<<<< HEAD
 ## I have suppressed warnings due to aggregate() trying to apply mean to the activity character column
+=======
+## we have suppressed warning due to aggregate() trying to apply mean to the activity character column
+>>>>>>> 921f78f292f6e73d56386989bd95514d1b2781fd
 
 ## some tidying of the set
 data_set_summary$activity <- data_set_summary$Group.2
@@ -112,7 +129,11 @@ data_set_summary$Group.2 <- NULL   ## No longer need Group.2
 data_set_summary$subject <- data_set_summary$Group.1
 data_set_summary$Group.1 <- NULL   ## No longer need Group.1
 
+<<<<<<< HEAD
 ## Finally write the data_set_summary to a file named data_set_summary.txt
+=======
+## Finally we write the data_set_summary to a file named data_set_summary.txt
+>>>>>>> 921f78f292f6e73d56386989bd95514d1b2781fd
 
 ## Text file created with write.table() using row.name=FALSE
 

@@ -1,7 +1,10 @@
   
 # Code Book - Data collected from the accelerometers from the Samsung Galaxy S smartphone   
 ```  
+<<<<<<< HEAD
 
+=======
+>>>>>>> 921f78f292f6e73d56386989bd95514d1b2781fd
 subject     2 digit  
     Number identifying the subject in the experiment.  
     Values are from 1 to 30  
