@@ -57,11 +57,7 @@ min(): Smallest value in array
 ...  
 meanFreq(): Weighted average of the frequency components to obtain a mean frequency  
   
-<<<<<<< HEAD
 I will load variables with "mean()" or "meanfreq()" or "std()" as part of their names.  
-=======
-We will load variables with "mean()" or "meanfreq()" or "std()" as part of their names.  
->>>>>>> 921f78f292f6e73d56386989bd95514d1b2781fd
   
 From the supplied features.txt (also Appendix 3 below), the "mean()" or "meanfreq()" variables are:  
   
@@ -177,11 +173,7 @@ The one field in train_subjects will be added to x_train_set as subjectNumber
 The one field in y_test_labels will be added to x_test_set as y_labelNumber  
 The one field in test_subjects will be added to x_test_set as subjectNumber  
   
-<<<<<<< HEAD
 I now merge the training and the test sets to create one data set named data_set_raw  
-=======
-We now merge the training and the test sets to create one data set named data_set_raw  
->>>>>>> 921f78f292f6e73d56386989bd95514d1b2781fd
   
 
 ```
@@ -191,11 +183,7 @@ We now merge the training and the test sets to create one data set named data_se
 ## 3. Uses descriptive activity names to name the activities in the data set  
 
 ```
-<<<<<<< HEAD
 I add the Activity Label by merging data_set_raw and activityLabels  
-=======
-We add the Activity Label by merging data_set_raw and activityLabels  
->>>>>>> 921f78f292f6e73d56386989bd95514d1b2781fd
 ```
 
 ## 2. Extracts only the measurements on the mean and standard deviation for each measurement.   
@@ -311,11 +299,7 @@ https://class.coursera.org/getdata-006/forum/thread?thread_id=196
 The "wide" tidy set is named data_set_summary.  
   
   
-<<<<<<< HEAD
 Finally I write the data_set_summary to a file named data_set_summary.txt  
-=======
-Finally we write the data_set_summary to a file named data_set_summary.txt  
->>>>>>> 921f78f292f6e73d56386989bd95514d1b2781fd
   
   
 
